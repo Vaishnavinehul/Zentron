@@ -8,246 +8,223 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        body{
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .logo{
-            width: 220px;
-        }
-        .back-header{
-            background-color: rgb(35, 41, 46);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 100vw;
-            padding-bottom: 60px;
-            padding: 20px 190px 60px 190px;
         }
-        .back-header-right{
-            display: flex;
-            gap: 40px;
-            color: white;
+
+        .main-container {
+            width: 100vw;
         }
-        .main-container{
-            position: relative;
+
+
+        .Home-page {
+            padding-left: 180px;
+            padding-right: 180px;
         }
-        .header{
-            position: absolute;
-            top: 110px;
-            right: 0;
-            left: 0;
-        }
-        .section1{
-            margin-top: 90px;
+        @media (max-width: 1300px) {
+            .Home-page{
+                padding-left: 60px;
+            padding-right: 60px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="main_container" class="main-container">
-        <div class="back-header">
-               <div><img src="./Company-logo.png" class="logo"></div>
-               <div class="back-header-right">
-                    <span><span style="margin-right: 10px; color: orange;"><i class="fas fa-map-marker-alt"></i></span>Doscover St. New York, NY 10012, USA</span>
-                    <span><span style="margin-right: 10px; color: orange;"><i class="fas fa-phone"></i></span>800-305-9514</span>
-               </div>
-        </div>
-            <iframe src="header.html" style="border:none;width:100%;height:100px; position: absolute;" class="header"></iframe>
-        
+    <div class="main-container">
 
-        <!-- <div id="nav_bar">
-            <img src="./logo.webp" id="logo">
-            <div id="nav">
-                <div><a id="home" href="./index.html">Home</a></div>
-                <div><a id="about" href="./about.html">About us</a></div>
-                <div><a id="contact" href="./contact.html">Contact us</a></div>
-                <div id="search_icon">
-                    <i class="fa fa-search" style="font-size:24px"></i>
+        <iframe src="header.html" style="border:none;width:100%;height:220px;"
+            class="header"></iframe>
+
+
+        <div class="Home-page">
+            <div id="photo_design" >
+                <h1 id="banner">
+                    <br>Innovation at Your Fingertips - Explore Top Electronics!
+                </h1>
+                <br><br><br><br><img src="banner.jpg" id="image2">
+                <br><br><br><br>
+                <h1>Shop from here!</h1>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="rasberrypi.png" alt="">
+                    <div class="card-title">Raspberry Pi 3 B+, 4 x 1,4 GHz, 1 Go RAM, WiFi, BT</div>
+                    <div class="rating">⭐ 4 (120)</div>
+                    <div class="price">
+                        <span class="new">Rs.38,31 €</span>
+                        <span class="old">Rs.26,82 €</span>
+                    </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
                 </div>
-            </div>
-        </div> -->
-        <br>
-        <div id="photo_design" class="section1">
-            <h1 id="banner"> 
-                <br>Innovation at Your Fingertips - Explore Top Electronics!</h1>
-            <br><br><br><br><img src="banner.jpg" id="image2">
-            <br><br><br><br><h1>Shop from here!</h1>
-            
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <img src="rasberrypi.png" alt="">
-                <div class="card-title">Raspberry Pi 3 B+, 4 x 1,4 GHz, 1 Go RAM, WiFi, BT</div>
-                <div class="rating">⭐ 4 (120)</div>
-                <div class="price">
-                    <span class="new">Rs.38,31 €</span>
-                    <span class="old">Rs.26,82 €</span>
-                  </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-            <div class="card">
-                <img src="Arduinouno.webp" alt="">
-                <div class="card-title">Arduino Uno R3 Microcontroller, Model #AD-ASB2208
-</div>
-                <div class="rating">⭐ 4.5 (120)</div>
-                <div class="price">
-                    <span class="new">Out of Stock</span>
-            
-                  </div>
-                  <div class="actions">
-
-                    
-                  </div>
-            </div>
-
-            <div class="card">
-                <img src="odroid.jpg" alt="">
-                <div class="card-title">ODROID-XU4
-Product Code: EC-21801</div>
-                <div class="rating">⭐ 3.5 (120)</div>
-                <div class="price">
-                    <span class="new">Rs.6414.00</span>
-                   
-                  </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-            
-            <div class="card">
-                <img src="gadget.jpg" alt="">
-                <div class="card-title">UDOO BOLT V8</div>
-                <div class="rating">⭐ 3 (120)</div>
-                <div class="price">
-                    <span class="new">Starting at
-                    $ 459,00</span>
+                <div class="card">
+                    <img src="Arduinouno.webp" alt="">
+                    <div class="card-title">Arduino Uno R3 Microcontroller, Model #AD-ASB2208
                     </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-        </div>
-        
-        <br><div class="card-container">
-            <div class="card">
-                <img src="phone.jpg" alt="">
-                <div class="card-title">Oppo Reno Flip 5G smartphone with inward folding display</div>
-                <div class="rating">⭐ 3.5 (120)</div>
-                <div class="price">
-                    <span class="new">Rs.1,30,650</span>
-                    <span class="old">Rs.1,70,840</span>
-                  </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-            <div class="card">
-                <img src="fridge.png" alt="">
-                <div class="card-title">Acer 190L 2 Star Direct-Cool Single Door Refrigerator
-</div>
-                <div class="rating">⭐ 5 (120)</div>
-                <div class="price">
-                    <span class="new">Rs.1,40,700</span>
-                    <span class="old">Rs.2,00,000</span>
+                    <div class="rating">⭐ 4.5 (120)</div>
+                    <div class="price">
+                        <span class="new">Out of Stock</span>
+
+                    </div>
+                    <div class="actions">
+
+
+                    </div>
                 </div>
-                <button class="cart-btn">Add to Cart</button>
-                <button class="wishlist-btn">♥</button>
-            </div>
-            
-                  
-            <div class="card">
-                <img src="laptop.jpg" alt="">
-                <div class="card-title">Lenovo H420 Desktop Computer (Black)</div>
-                <div class="rating">⭐ 4 (120)</div>
-                <div class="price">
-                    <span class="new">$749.99</span>
-                    <span class="old">$1,499.99</span>
-                   
-                  </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-            
-            <div class="card">
-                <img src="headsets.jpg" alt="">
-                <div class="card-title">Wantek Phone Headset with microphones</div>
-                <div class="rating">⭐ 4.5 (120)</div>
-                <div class="price">
-                    <span class="new">Starting at
-                    $29.79</span>
-                    </div>
-                  <div class="actions">
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                  </div>
-            </div>
-        </div>
 
-        <br> <br><br><div id="highlights">
-            <img src="./IMG.jpg" id="photo">
-            <div id="highlights_text">
-                <h1 id="highlight_heading2">Highlights</h1>
-                <p class="highlight_text">Explore the latest in technology with AI-powered smart devices, 
-                    foldable phones, and health-tracking wearables.
-                </p>
-                <br>
-                <p class="highlight_text">Enjoy seamless connectivity, voice control, and real-time monitoring for a smarter lifestyle.
-Discover smart glasses and VR headsets for immersive digital experiences.</p>
-                <br>
-                <p class="highlight_text">Our gadgets combine innovation, energy efficiency, and 
-                    modern design to enhance everyday life.</p>
-            </div>
-        </div>
-        <br>
+                <div class="card">
+                    <img src="odroid.jpg" alt="">
+                    <div class="card-title">ODROID-XU4
+                        Product Code: EC-21801</div>
+                    <div class="rating">⭐ 3.5 (120)</div>
+                    <div class="price">
+                        <span class="new">Rs.6414.00</span>
 
-        <div id="services">
-            <br><br><h1 id="main_heading">OUR SERVICES</h1>
-            <div id="our_services">
-                <div id="serices_cards">
-                    <div class="services_card1">
-                        <img src="./icon1.webp" class="icon1">
-                        <div class="services_text">
-                            <span class="services_heading">Design & Consultancy</span>
-                        </div>
                     </div>
-                    <div class="services_card1">
-                        <img src="./icon2.jpg" class="icon1">
-                        <div class="services_text">
-                            <span class="services_heading">Smart Home Setup Assistance</span>
-                        </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
                     </div>
-                    <div class="services_card1">
-                        <img src="./icon3.jpg" class="icon1">
-                        <div class="services_text">
-                            <span class="services_heading">Customized Electronics Projects</span>
-                        </div>
+                </div>
+
+                <div class="card">
+                    <img src="gadget.jpg" alt="">
+                    <div class="card-title">UDOO BOLT V8</div>
+                    <div class="rating">⭐ 3 (120)</div>
+                    <div class="price">
+                        <span class="new">Starting at
+                            $ 459,00</span>
                     </div>
-                    <div class="services_card1">
-                        <img src="./icon4.jpg" class="icon1">
-                        <div class="services_text">
-                            <span class="services_heading">Tech Consultation & Support</span>
-                        </div>
-                    </div>
-                    
-                        </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <img src="phone.jpg" alt="">
+                    <div class="card-title">Oppo Reno Flip 5G smartphone with inward folding display</div>
+                    <div class="rating">⭐ 3.5 (120)</div>
+                    <div class="price">
+                        <span class="new">Rs.1,30,650</span>
+                        <span class="old">Rs.1,70,840</span>
+                    </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="fridge.png" alt="">
+                    <div class="card-title">Acer 190L 2 Star Direct-Cool Single Door Refrigerator
+                    </div>
+                    <div class="rating">⭐ 5 (120)</div>
+                    <div class="price">
+                        <span class="new">Rs.1,40,700</span>
+                        <span class="old">Rs.2,00,000</span>
+                    </div>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="wishlist-btn">♥</button>
+                </div>
 
-        <footer id="footer">
-            <p id="footer_text">© 2018 Electronics Hub.</p>
-        </footer>
+
+                <div class="card">
+                    <img src="laptop.jpg" alt="">
+                    <div class="card-title">Lenovo H420 Desktop Computer (Black)</div>
+                    <div class="rating">⭐ 4 (120)</div>
+                    <div class="price">
+                        <span class="new">$749.99</span>
+                        <span class="old">$1,499.99</span>
+
+                    </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="headsets.jpg" alt="">
+                    <div class="card-title">Wantek Phone Headset with microphones</div>
+                    <div class="rating">⭐ 4.5 (120)</div>
+                    <div class="price">
+                        <span class="new">Starting at
+                            $29.79</span>
+                    </div>
+                    <div class="actions">
+                        <button class="cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♥</button>
+                    </div>
+                </div>
+            </div>
+
+            <br> <br><br>
+            <div id="highlights">
+                <img src="./IMG.jpg" id="photo">
+                <div id="highlights_text">
+                    <h1 id="highlight_heading2">Highlights</h1>
+                    <p class="highlight_text">Explore the latest in technology with AI-powered smart devices,
+                        foldable phones, and health-tracking wearables.
+                    </p>
+                    <br>
+                    <p class="highlight_text">Enjoy seamless connectivity, voice control, and real-time monitoring for a
+                        smarter lifestyle.
+                        Discover smart glasses and VR headsets for immersive digital experiences.</p>
+                    <br>
+                    <p class="highlight_text">Our gadgets combine innovation, energy efficiency, and
+                        modern design to enhance everyday life.</p>
+                </div>
+            </div>
+            <br>
+
+            <div id="services">
+                <br><br>
+                <h1 id="main_heading">OUR SERVICES</h1>
+                <div id="our_services">
+                    <div id="serices_cards">
+                        <div class="services_card1">
+                            <img src="./icon1.webp" class="">
+                            <div class="services_text">
+                                <span class="services_heading">Design & Consultancy</span>
+                            </div>
+                        </div>
+                        <div class="services_card1">
+                            <img src="./icon2.jpg" class="icon1">
+                            <div class="services_text">
+                                <span class="services_heading">Smart Home Setup Assistance</span>
+                            </div>
+                        </div>
+                        <div class="services_card1">
+                            <img src="./icon3.jpg" class="icon1">
+                            <div class="services_text">
+                                <span class="services_heading">Customized Electronics Projects</span>
+                            </div>
+                        </div>
+                        <div class="services_card1">
+                            <img src="./icon4.jpg" class="icon1">
+                            <div class="services_text">
+                                <span class="services_heading">Tech Consultation & Support</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+    <footer id="footer">
+        <p id="footer_text">© 2018 Electronics Hub.</p>
+    </footer>
 </body>
 
 </html>

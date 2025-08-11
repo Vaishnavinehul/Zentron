@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        body{
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             padding: 0;
             margin: 0;
         }
-        .main-container{
-            background-color: white;
+
+        .main-container {
+            width: 100vw;
+            
+        }
+
+        .back-header {
+            background-color: rgb(35, 41, 46);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
-            box-shadow: 0px 1px 8px 0.1px rgb(199, 199, 198);
-            border-radius: 5px;
+            padding: 20px 180px 60px 180px;
+            position: relative;
         }
-        .container-left{
+
+        .front-header {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
             display: flex;
-            gap: 40px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: absolute;
+            top: 120px;
+            left: 180px;
+            right: 180px;
         }
-        .container-left span{
+
+
+        .container-left {
+            display: flex;
+            gap: 30px;
+        }
+
+        .container-left span {
             color: black;
             font-weight: bold;
         }
-        .container-left a{
-            text-decoration: none;
-            color:black;
+        .container-left span:hover {
+            color: orange;
+            font-weight: bold;
         }
+
+        .container-left a {
+            text-decoration: none;
+            color: black;
+        }
+        .container-left a:hover {
+            text-decoration: none;
+            color: orange;
+            font-weight: bolder;
+        }
+
         .container-right {
             background: white;
             border-radius: 8px;
@@ -40,13 +74,13 @@
             justify-content: space-between;
             align-items: center;
             padding: 8px 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             width: 250px;
         }
 
         .container-right input {
             border: none;
-            outline: none;            
+            outline: none;
             font-size: 14px;
         }
 
@@ -54,24 +88,65 @@
             color: #555;
             cursor: pointer;
         }
+        .container-right i:hover {
+            color: orange;
+            cursor: pointer;
+        }
 
+        .logo {
+            width: 220px;
+        }
+
+        .back-header-right {
+            display: flex;
+            gap: 40px;
+            color: white;
+        }
+
+
+        @media (max-width: 1300px) {
+            .front-header {
+                flex-direction: column !important;
+                gap: 30px;
+                left: 60px;
+            right: 60px;
+            }
+            .back-header{
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="container-left">
-            <span><a id="home" href="./index.html" target="_parent">HOME</a></span>
-            <span><a id="about" href="./about.html" target="_parent">ABOUT</a></span>
-            <span><a  href="" target="_parent">SERVICE</a></span>
-            <span><a  href="" target="_parent">PAGES</a></span>
-            <span><a  href="" target="_parent">NEWS</a></span>
-            <span><a  href="" target="_parent">CONTACT US</a></span>
+        <div class="back-header">
+            <div><img src="./Company-logo.png" class="logo"></div>
+            <div class="back-header-right">
+                <span><span style="margin-right: 10px; color: orange;"><i
+                            class="fas fa-map-marker-alt"></i></span>Doscover
+                    St. New York, NY 10012, USA</span>
+                <span><span style="margin-right: 10px; color: orange;"><i
+                            class="fas fa-phone"></i></span>800-305-9514</span>
+            </div>
+            <div class="front-header">
+                <div class="container-left">
+                    <span><a id="home" href="./index.html" target="_parent">HOME</a></span>
+                    <span><a id="about" href="./about.html" target="_parent">ABOUT</a></span>
+                    <span><a href="./Services.html" target="_parent">SERVICES</a></span>
+                    <span><a href="" target="_parent">PAGES</a></span>
+                    <span><a href="" target="_parent">NEWS</a></span>
+                    <span><a href="" target="_parent">CONTACT US</a></span>
+                </div>
+                <div class="container-right">
+                    <input type="text" placeholder="Search here">
+                    <i class="fa fa-search search-icon" style="font-size:24px; "></i>
+                </div>
+            </div>
         </div>
-        <div class="container-right"> 
-            <input type="text" placeholder="Search here">
-             <i class="fa fa-search" style="font-size:24px; "></i>
-        </div>
+
     </div>
 </body>
+
 </html>
