@@ -7,87 +7,103 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-body {
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            width: 100vw;
+            /* width: 100vw; */
         }
-        .main-container {
-            width: 100vw;
+
+        .main-container {}
+
+        .about-section {
+            background-image: url(./photo.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 100%;
+            margin-left: calc(-50vw + 50%);
+            margin-top: -140px;
             padding-left: 180px;
             padding-right: 180px;
+            height: max-content;
         }
+        .team{
+            width: 100%;
+            padding-left: 180px;
+            padding-right: 180px;
+
+        }
+
         @media (max-width: 1300px) {
             .main-container {
-            padding-left: 60px;
-            padding-right: 60px;
-        }
+                padding-left: 60px;
+                padding-right: 60px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <iframe src="header.html" style="border:none;width:100%;height:220px;"></iframe>
-    <div class="main-container">
-        
-    
-        <div id="about_section">
-            <div id="about_para">
-                <h2 id="sub_headind1">ABOUT US</h2>
-                <pre id="para"> Welcome to Electronics Hub Your Trusted Source for All Things Electronics!
+    <iframe src="header.html" style="border:none;width:100%;height:220px; z-index:9999; "></iframe>
+    <!-- <div class="main-container"> -->
+    <div class="about-section">
+        <div id="about_para">
+            <h2 id="sub_headind1">ABOUT US</h2>
+            <pre id="para"> Welcome to Electronics Hub Your Trusted Source for All Things Electronics!
 At Electronics Hub, we are passionate about the world of electronics from basic components to cutting-edge innovations.
 Our goal is to provide reliable information, quality products, and useful insights for students, hobbyists, 
 engineers, and tech enthusiasts alike.</pre>
-            </div>
-            <br>
-            <div id="about.html"></div>
-            <div id="about_para"></div>
-            <h2 id="sub_heading4">WHO WE ARE</h2>
-            <pre id="para">We are a team of tech-driven individuals with backgrounds in electrical engineering, embedded systems,
+        </div>
+        <br>
+        <div id="about.html"></div>
+        <div id="about_para"></div>
+        <h2 id="sub_heading4">WHO WE ARE</h2>
+        <pre id="para">We are a team of tech-driven individuals with backgrounds in electrical engineering, embedded systems,
  and hardware development. Whether you're building your first circuit or working on a complex IoT project, 
  we’re here to support your journey.</pre>
-            <br>
-            <br>
-            <div id="team">
-                <br><br>
-                <h2 id="sub_heading3">Team Members</h2>
-                <br>
-                <div id="cards">
-                    <div class="card1">
-                        <img class="photo1" src="./photo1.jpg">
-                        <div class="profile">
-                            <div class="name">Name: <span>Xyz</span></div>
-                            <div class="designation">Designation: <span>CFS modeler</span></div>
-                            <div class="designation">Experience: <span>5 years</span></div>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <img class="photo1" src="./photo1.jpg">
-                        <div class="profile">
-                            <div class="name">Name: <span>Xyz</span></div>
-                            <div class="designation">Designation: <span>CFS modeler</span></div>
-                            <div class="designation">Experience: <span>5 years</span></div>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <img class="photo1" src="./photo1.jpg">
-                        <div class="profile">
-                            <div class="name">Name: <span>Xyz</span></div>
-                            <div class="designation">Designation: <span>CFS modeler</span></div>
-                            <div class="designation">Experience: <span>5 years</span></div>
-                        </div>
-                    </div>
-                    <div class="card1">
-                        <img class="photo1" src="./photo1.jpg">
-                        <div class="profile">
-                            <div class="name">Name: <span>Xyz</span></div>
-                            <div class="designation">Designation: <span>CFS modeler</span></div>
-                            <div class="designation">Experience: <span>5 years</span></div>
-                        </div>
-                    </div>
+
+    </div>
+    <div class="team">
+        <br><br>
+        <h1 style="text-align: center;">Team Members</h1>
+        <br>
+        <div id="cards" style="width: 100%;">
+            <div class="card1">
+                <img class="photo1" src="./photo1.jpg">
+                <div class="profile">
+                    <div class="name">Name: <span>Xyz</span></div>
+                    <div class="designation">Designation: <span>CFS modeler</span></div>
+                    <div class="designation">Experience: <span>5 years</span></div>
                 </div>
             </div>
-
+            <div class="card1">
+                <img class="photo1" src="./photo1.jpg">
+                <div class="profile">
+                    <div class="name">Name: <span>Xyz</span></div>
+                    <div class="designation">Designation: <span>CFS modeler</span></div>
+                    <div class="designation">Experience: <span>5 years</span></div>
+                </div>
+            </div>
+            <div class="card1">
+                <img class="photo1" src="./photo1.jpg">
+                <div class="profile">
+                    <div class="name">Name: <span>Xyz</span></div>
+                    <div class="designation">Designation: <span>CFS modeler</span></div>
+                    <div class="designation">Experience: <span>5 years</span></div>
+                </div>
+            </div>
+            <div class="card1">
+                <img class="photo1" src="./photo1.jpg">
+                <div class="profile">
+                    <div class="name">Name: <span>Xyz</span></div>
+                    <div class="designation">Designation: <span>CFS modeler</span></div>
+                    <div class="designation">Experience: <span>5 years</span></div>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- </div> -->
+    <iframe src="footer.html" style="border:none;width:100%;height:320px;" class="footer"></iframe>
 </body>
 
 </html>
