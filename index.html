@@ -12,182 +12,209 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .main-container {
-            
-        }
+        .main-container {}
 
 
         .Home-page {
             padding-left: 180px;
             padding-right: 180px;
+            padding-top: 200px;
+            padding-bottom: 140px;
+            background-image: url(./banner1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: -120px;
+            width: 100%;
+            color: white;
         }
+
+        .Home-page h1 {
+            width: 40%;
+            margin-bottom: 30px;
+            color: rgb(247, 150, 72);
+        }
+
+        .Home-page p {
+            width: 40%;
+            margin-bottom: 60px;
+        }
+
+        .Home-page button {
+            margin-bottom: 30px;
+            background-color: rgb(247, 150, 72);
+            border: 0;
+            padding: 10px 20px;
+            font-weight: bolder;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .Home-page a {
+            color: black;
+            text-decoration: none;
+        }
+
         @media (max-width: 1300px) {
-            .Home-page{
+            .Home-page {
                 padding-left: 60px;
-            padding-right: 60px;
+                padding-right: 60px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="main-container">
 
-        <iframe src="header.html" style="border:none;width:100%;height:260px;"
-            class="header"></iframe>
+    <iframe src="header.html" style="border:none;width:100%;height:260px;z-index:9999;" class="header"></iframe>
 
 
-        <div class="Home-page">
-            <div id="photo_design" >
-                <h1 id="banner">
-                    <br>Innovation at Your Fingertips - Explore Top Electronics!
-                </h1>
-                <br><br><br><br><img src="banner.jpg" id="image2" style="max-width: 100%">
-                <br><br><br><br>
-                <h1>Shop from here!</h1>
+    <div class="Home-page">
+        <h1>Innovation at Your Fingertips - Explore Top Electronics!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, deserunt? Quam expedita nisi adipisci
+            consequatur neque aliquid necessitatibus architecto maxime quae! Necessitatibus dolor veritatis
+            reprehenderit perferendis ad. Asperiores, possimus expedita?</p>
+        <button><a href="">Contact Us <i class="fas fa-arrow-right"></i></a></button>
+    </div>
+
+
+    <!-- <div class="card-container">
+        <div class="card">
+            <img src="rasberrypi.png" alt="">
+            <div class="card-title">Raspberry Pi 3 B+, 4 x 1,4 GHz, 1 Go RAM, WiFi, BT</div>
+            <div class="rating">⭐ 4 (120)</div>
+            <div class="price">
+                <span class="new">Rs.38,31 €</span>
+                <span class="old">Rs.26,82 €</span>
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <img src="rasberrypi.png" alt="">
-                    <div class="card-title">Raspberry Pi 3 B+, 4 x 1,4 GHz, 1 Go RAM, WiFi, BT</div>
-                    <div class="rating">⭐ 4 (120)</div>
-                    <div class="price">
-                        <span class="new">Rs.38,31 €</span>
-                        <span class="old">Rs.26,82 €</span>
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="Arduinouno.webp" alt="">
-                    <div class="card-title">Arduino Uno R3 Microcontroller, Model #AD-ASB2208
-                    </div>
-                    <div class="rating">⭐ 4.5 (120)</div>
-                    <div class="price">
-                        <span class="new">Out of Stock</span>
-
-                    </div>
-                    <div class="actions">
-
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="odroid.jpg" alt="">
-                    <div class="card-title">ODROID-XU4
-                        Product Code: EC-21801</div>
-                    <div class="rating">⭐ 3.5 (120)</div>
-                    <div class="price">
-                        <span class="new">Rs.6414.00</span>
-
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="gadget.jpg" alt="">
-                    <div class="card-title">UDOO BOLT V8</div>
-                    <div class="rating">⭐ 3 (120)</div>
-                    <div class="price">
-                        <span class="new">Starting at
-                            $ 459,00</span>
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
             </div>
-
-            <br>
-            <div class="card-container">
-                <div class="card">
-                    <img src="phone.jpg" alt="">
-                    <div class="card-title">Oppo Reno Flip 5G smartphone with inward folding display</div>
-                    <div class="rating">⭐ 3.5 (120)</div>
-                    <div class="price">
-                        <span class="new">Rs.1,30,650</span>
-                        <span class="old">Rs.1,70,840</span>
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="fridge.png" alt="">
-                    <div class="card-title">Acer 190L 2 Star Direct-Cool Single Door Refrigerator
-                    </div>
-                    <div class="rating">⭐ 5 (120)</div>
-                    <div class="price">
-                        <span class="new">Rs.1,40,700</span>
-                        <span class="old">Rs.2,00,000</span>
-                    </div>
-                    <button class="cart-btn">Add to Cart</button>
-                    <button class="wishlist-btn">♥</button>
-                </div>
-
-
-                <div class="card">
-                    <img src="laptop.jpg" alt="">
-                    <div class="card-title">Lenovo H420 Desktop Computer (Black)</div>
-                    <div class="rating">⭐ 4 (120)</div>
-                    <div class="price">
-                        <span class="new">$749.99</span>
-                        <span class="old">$1,499.99</span>
-
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="headsets.jpg" alt="">
-                    <div class="card-title">Wantek Phone Headset with microphones</div>
-                    <div class="rating">⭐ 4.5 (120)</div>
-                    <div class="price">
-                        <span class="new">Starting at
-                            $29.79</span>
-                    </div>
-                    <div class="actions">
-                        <button class="cart-btn">Add to Cart</button>
-                        <button class="wishlist-btn">♥</button>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <img src="Arduinouno.webp" alt="">
+            <div class="card-title">Arduino Uno R3 Microcontroller, Model #AD-ASB2208
             </div>
+            <div class="rating">⭐ 4.5 (120)</div>
+            <div class="price">
+                <span class="new">Out of Stock</span>
 
-            <br> <br><br>
-            <div id="highlights">
-                <img src="./IMG.jpg" id="photo">
-                <div id="highlights_text">
-                    <h1 id="highlight_heading2">Highlights</h1>
-                    <p class="highlight_text">Explore the latest in technology with AI-powered smart devices,
-                        foldable phones, and health-tracking wearables.
-                    </p>
-                    <br>
-                    <p class="highlight_text">Enjoy seamless connectivity, voice control, and real-time monitoring for a
-                        smarter lifestyle.
-                        Discover smart glasses and VR headsets for immersive digital experiences.</p>
-                    <br>
-                    <p class="highlight_text">Our gadgets combine innovation, energy efficiency, and
-                        modern design to enhance everyday life.</p>
-                </div>
             </div>
-            
+            <div class="actions">
+
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="odroid.jpg" alt="">
+            <div class="card-title">ODROID-XU4
+                Product Code: EC-21801</div>
+            <div class="rating">⭐ 3.5 (120)</div>
+            <div class="price">
+                <span class="new">Rs.6414.00</span>
+
+            </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gadget.jpg" alt="">
+            <div class="card-title">UDOO BOLT V8</div>
+            <div class="rating">⭐ 3 (120)</div>
+            <div class="price">
+                <span class="new">Starting at
+                    $ 459,00</span>
+            </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="phone.jpg" alt="">
+            <div class="card-title">Oppo Reno Flip 5G smartphone with inward folding display</div>
+            <div class="rating">⭐ 3.5 (120)</div>
+            <div class="price">
+                <span class="new">Rs.1,30,650</span>
+                <span class="old">Rs.1,70,840</span>
+            </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="fridge.png" alt="">
+            <div class="card-title">Acer 190L 2 Star Direct-Cool Single Door Refrigerator
+            </div>
+            <div class="rating">⭐ 5 (120)</div>
+            <div class="price">
+                <span class="new">Rs.1,40,700</span>
+                <span class="old">Rs.2,00,000</span>
+            </div>
+            <button class="cart-btn">Add to Cart</button>
+            <button class="wishlist-btn">♥</button>
+        </div>
+
+
+        <div class="card">
+            <img src="laptop.jpg" alt="">
+            <div class="card-title">Lenovo H420 Desktop Computer (Black)</div>
+            <div class="rating">⭐ 4 (120)</div>
+            <div class="price">
+                <span class="new">$749.99</span>
+                <span class="old">$1,499.99</span>
+
+            </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="headsets.jpg" alt="">
+            <div class="card-title">Wantek Phone Headset with microphones</div>
+            <div class="rating">⭐ 4.5 (120)</div>
+            <div class="price">
+                <span class="new">Starting at
+                    $29.79</span>
+            </div>
+            <div class="actions">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wishlist-btn">♥</button>
+            </div>
         </div>
     </div>
 
 
-        <iframe src="footer.html" style="border:none;width:100%;height:320px;"
-            class="footer"></iframe>
+    <div id="highlights">
+        <img src="./IMG.jpg" id="photo">
+        <div id="highlights_text">
+            <h1 id="highlight_heading2">Highlights</h1>
+            <p class="highlight_text">Explore the latest in technology with AI-powered smart devices,
+                foldable phones, and health-tracking wearables.
+            </p>
+            <br>
+            <p class="highlight_text">Enjoy seamless connectivity, voice control, and real-time monitoring for a
+                smarter lifestyle.
+                Discover smart glasses and VR headsets for immersive digital experiences.</p>
+            <br>
+            <p class="highlight_text">Our gadgets combine innovation, energy efficiency, and
+                modern design to enhance everyday life.</p>
+        </div>
+    </div> -->
+
+
+    <iframe src="footer.html" style="border:none;width:100%;height:320px;" class="footer"></iframe>
 </body>
 
 </html>
