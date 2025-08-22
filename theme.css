@@ -1,0 +1,20 @@
+
+
+
+.primary-color{
+    color: rgb(248, 116, 8);
+}
+.secondary-bgcolor{
+    background-color: rgb(35, 41, 46);
+}
+.common-btn{
+    background-color: rgb(248, 116, 8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 16px;
+}
+.common-btn:hover{
+    background-color: rgb(214, 72, 7);
+}
