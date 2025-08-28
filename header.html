@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -17,7 +20,7 @@
 
         .main-container {
             width: 100vw;
-            
+
         }
 
         .back-header {
@@ -32,7 +35,7 @@
         .front-header {
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -48,12 +51,14 @@
         .container-left {
             display: flex;
             gap: 30px;
+            width: 70%;
         }
 
         .container-left span {
             color: black;
             font-weight: bold;
         }
+
         .container-left span:hover {
             color: orange;
             font-weight: bold;
@@ -63,6 +68,7 @@
             text-decoration: none;
             color: black;
         }
+
         .container-left a:hover {
             text-decoration: none;
             color: orange;
@@ -77,7 +83,7 @@
             align-items: center;
             padding: 8px 12px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            width: 250px;
+            width: 30%;
         }
 
         .container-right input {
@@ -90,13 +96,14 @@
             color: #555;
             cursor: pointer;
         }
+
         .container-right i:hover {
             color: orange;
             cursor: pointer;
         }
 
         .logo {
-            width: 220px;
+            width: 250px;
         }
 
         .back-header-right {
@@ -106,25 +113,14 @@
         }
 
 
-        @media (max-width: 1300px) {
-            .front-header {
-                flex-direction: column !important;
-                gap: 30px;
-                left: 60px;
-            right: 60px;
-            }
-            .back-header{
-                padding-left: 60px;
-                padding-right: 60px;
-            }
-        }
+        @media (max-width: 1500px) {}
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="back-header">
-            <div><img src="./Company-logo.png" class="logo"></div>
+        <div class="back-header respon-padding">
+            <div><img src="./Logo/Zetron-Logo.png" class="logo"></div>
             <div class="back-header-right">
                 <span><span style="margin-right: 10px; color: orange;"><i
                             class="fas fa-map-marker-alt"></i></span>Doscover
@@ -143,7 +139,7 @@
                 </div>
                 <div class="container-right">
                     <input type="text" placeholder="Search here">
-                    <i class="fa fa-search search-icon" style="font-size:24px; "></i>
+                    <i class="fa fa-search search-icon"></i>
                 </div>
             </div>
         </div>

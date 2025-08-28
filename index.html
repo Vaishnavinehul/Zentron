@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Zetron</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -54,13 +55,6 @@
         .Home-page a {
             color: black;
             text-decoration: none;
-        }
-
-        @media (max-width: 1300px) {
-            .respon-padding{
-                padding-left: 60px;
-                padding-right: 60px;
-            }
         }
     </style>
 </head>
@@ -130,7 +124,7 @@
                 <h3>Smart Camera</h3>
                 <h1>40% <span class="primary-color">OFF</span></h1>
             </div>
-            <img src="./Images/product-1.png" alt="Camera" class="product-img">
+            <img src="./Images/product-1.png" alt="Camera" class="offer-product-img">
         </div>
         <div class="offer-card">
             <div class="offer-detail">
@@ -138,7 +132,7 @@
                 <h3>Smart Watch</h3>
                 <h1>20% <span class="primary-color">OFF</span></h1>
             </div>
-            <img src="./Images/product-2.png" alt="Camera" class="product-img">
+            <img src="./Images/product-2.png" alt="Camera" class="offer-product-img">
         </div>
     </div>
 
@@ -147,9 +141,11 @@
 
 
     <!-- Product Section Start -->
-
-    <div class="products respon-padding" >
+    <div class="section-heading">
         <h1>Our Products</h1>
+    </div>
+    <div class="products respon-padding">
+
         <div class="all-products">
             <div class="product-card">
                 <div class="product-img">
@@ -198,24 +194,142 @@
 
             <div class="product-card">
                 <div class="product-img">
-                    <img src="./Images/product-6.png" alt="Product1">
+                    <img src="./Images/product-7.png" alt="Product1">
                 </div>
                 <div class="product-details">
-                    <span class="primary-color">SmartPhone</span>
-                    <h4>Apple iPad Mini <br>G2356</h4>
+                    <span class="primary-color">Computer</span>
+                    <h4>Apple 2024 iMac <br>with M4 chip</h4>
                     <div class="price">
-                        <del>$1,250.00</del>
-                        <span class="primary-color">$1,050.00</span>
+                        <del>$1,539.21</del>
+                        <span class="primary-color">$1,460.94</span>
+                    </div>
+                    <button class="common-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./Images/product-8.png" alt="Product1">
+                </div>
+                <div class="product-details">
+                    <span class="primary-color">Headphones</span>
+                    <h4>SONY WH-1000XM4 <br>Wireless ENC Headphones</h4>
+                    <div class="price">
+                        <del>$399.99</del>
+                        <span class="primary-color">$342.19</span>
+                    </div>
+                    <button class="common-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./Images/product-9.png" alt="Product1">
+                </div>
+                <div class="product-details">
+                    <span class="primary-color">Earbuds</span>
+                    <h4>SONY WF-C710N <br>Wireless ENC Earbuds</h4>
+                    <div class="price">
+                        <del>$199.99</del>
+                        <span class="primary-color">$148.22</span>
+                    </div>
+                    <button class="common-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./Images/product-10.png" alt="Product1">
+                </div>
+                <div class="product-details">
+                    <span class="primary-color">Gadget</span>
+                    <h4>SAMSUNG Galaxy Ring <br>SM-Q500NZKA</h4>
+                    <div class="price">
+                        <del>$555.98</del>
+                        <span class="primary-color">$444.98</span>
+                    </div>
+                    <button class="common-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./Images/product-11.png" alt="Product1">
+                </div>
+                <div class="product-details">
+                    <span class="primary-color">Mobile Accessories</span>
+                    <h4>Galaxy S25 Edge <br>Silicone Case</h4>
+                    <div class="price">
+                        <del>$14.00</del>
+                        <span class="primary-color">$27.37</span>
                     </div>
                     <button class="common-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
                 </div>
             </div>
 
         </div>
+        <div class="more-products">
+            <button class="more-btn">Load More...</button>
+        </div>
     </div>
 
     <!-- Product Section End -->
 
+
+    <!-- FAQ's Section Start -->
+    <div class="section-heading respon-padding">
+        <h1>FAQ's</h1>
+    </div>
+    <div class="faqs respon-padding">
+        <div class="faq-item">
+            <div class="que">
+                <span>What payment methods do you accept?</span>
+                <span class="faq-arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="ans">
+                <p>We accept credit/debit cards, UPI, net banking, and popular wallets.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="que">
+                <span>What is your return policy?</span>
+                <span class="faq-arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="ans">
+                <p>You can return most items within 7 days of delivery if they are unused and in original packaging.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="que">
+                <span>Are your products covered under warranty?</span>
+                <span class="faq-arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="ans">
+                <p>Yes, most electronics come with a manufacturer’s warranty. Please check the product details page.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="que">
+                <span>Can I cancel my order after placing it?</span>
+                <span class="faq-arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="ans">
+                <p>Yes, you can cancel your order within 24 hours of purchase before it is shipped.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="que">
+                <span>How can I contact customer support?</span>
+                <span class="faq-arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="ans">
+                <p>You can reach us through live chat, email, or our customer support hotline.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ's Section End -->
 
 
     <!-- Footer Section Start -->
@@ -223,7 +337,7 @@
     <div class="footer respon-padding">
         <div class="comp-info">
             <div>
-                <img src="./Company-logo.png" class="logo">
+                <img src="./Logo/Zetron-Logo.png" class="logo">
                 <p>This is a sample website footer. Replace this text with real info about your company or project.</p>
             </div>
 
@@ -252,6 +366,23 @@
     </div>
 
     <!-- Footer Section End -->
+
+
+    <script>
+        const faqs = document.querySelectorAll(".faq-item");
+
+        faqs.forEach(faq => {
+            faq.querySelector(".que").addEventListener("click", () => {
+                faqs.forEach(item => {
+                    if (item !== faq) {
+                        item.classList.remove("active");
+                    }
+                });
+
+                faq.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>
