@@ -55,6 +55,18 @@
     .product-card {
         width: 30% !important;
     }
+    .shop-product-card {
+        width: 40% !important;
+    }
+    .search-bar{
+        width: 30% !important;
+    }
+    .sort-dropdown{
+        width: 40% !important;
+    }
+    .view-filter{
+        width: 20% !important;
+    }
 }
 
 @media (max-width: 1000px) {
