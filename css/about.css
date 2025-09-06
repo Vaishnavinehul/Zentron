@@ -1,0 +1,112 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+.team-section {
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+    text-align: center; 
+}
+
+
+.team-header {
+    margin-bottom: 50px; 
+}
+
+.team-header h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2.8em; 
+    font-weight: 700; 
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.team-header p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px; 
+    margin: 0 auto; 
+    line-height: 1.8;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-bottom: 60px; 
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    padding: 30px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-between;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 25px;
+    border: 3px solid #eee; 
+}
+
+.member-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+   
+    min-height: 120px;
+    overflow: hidden; 
+}
+
+.read-more {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    display: inline-block; 
+    margin-bottom: 15px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.member-name {
+    display: block; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+}
+
+.member-title {
+    display: block; 
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}

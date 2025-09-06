@@ -138,7 +138,7 @@ input[type="radio"], input[type="checkbox"] {
     width: 100%;
 }
 .search-bar{
-    width: 60%;
+    width: 50%;
     border: 1px solid rgb(199, 199, 199);
     display: flex;
     justify-content: space-between;
@@ -174,7 +174,7 @@ input[type="radio"], input[type="checkbox"] {
 .sort-dropdown{
     display: flex;
     justify-content: space-between;
-    width: 27%;
+    width: 35%;
     background-color: #e9ecef;
     border-radius: 10px;
     padding: 14px 20px;
@@ -199,9 +199,9 @@ input[type="radio"], input[type="checkbox"] {
 }
 .view-filter{
     display: flex;
-    width: 13%;
+    width: 15%;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 16px;
     border-radius: 10px;
     background-color: #e9ecef;
     font-size: 36px;
